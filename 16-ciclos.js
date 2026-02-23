@@ -34,14 +34,3 @@ const usuarios=[
     {nombre:"Santi",edad:90},
     {nombre:"Felipe",edad:43}
 ];
-
-const procesarUsuarios=(usuarios)=>{
-    return usuarios
-        .filter(usuario=>usuario.edad>18)
-        .map(usuario=>{//trasformar datos
-            const {nombre}=usuario;//reestructuracion para obtener el nombre del usuario
-            return nombre.length>5?nombre.toUpperCase():nombre.toLowerCase();
-        });
-};
-const reust2=procesarUsuarios(usuarios);
-console.log(reust2);
